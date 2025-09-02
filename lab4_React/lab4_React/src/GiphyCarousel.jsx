@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useFetch } from "./useFetch";
 
-const API_KEY = "sIpUokc2yK8IMFEAL3ByaQwqGxiK7EjY"; 
+const API_KEY = import.meta.env.VITE_GIPHY_API_KEY; 
 
 export default function GiphyCarousel() {
   const [term, setTerm] = useState("");
