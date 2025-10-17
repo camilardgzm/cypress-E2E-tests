@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Tarjeta del formulario */
+.login-form {
+  background-color: #ffffff;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  width: 340px;
+  text-align: center;
+}
+
+/* Título */
+.login-form h2 {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #e11d48;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Campos de entrada */
+.login-form input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #3b82f6;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Botón */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.login-form button:hover {
+  background-color: #1e40af;
+  transform: scale(1.02);
+}
+
+/* Placeholder */
+::placeholder {
+  color: #9ca3af;
+}
+
+/* Responsivo */
+@media (max-width: 400px) {
+  .login-form {
+    width: 90%;
+    padding: 30px 24px;
+  }
+}
